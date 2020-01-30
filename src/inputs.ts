@@ -2,10 +2,7 @@ import {Directive, ElementRef, Attribute} from '@angular/core';
 import {uniqueId} from './util';
 
 @Directive({
-	selector: '[card-number]',
-	host: {
-		'[name]': 'name',
-	},
+	selector: '[card-number]'
 })
 export class NgxCardNumberTemplate {
 	constructor(public elementRef: ElementRef, @Attribute('name') public name: string) {}
@@ -16,10 +13,7 @@ export class NgxCardNumberTemplate {
 }
 
 @Directive({
-	selector: '[card-name]',
-	host: {
-		'[name]': 'name',
-	},
+	selector: '[card-name]'
 })
 export class NgxCardNameTemplate {
 	constructor(public elementRef: ElementRef, @Attribute('name') public name: string) {}
@@ -30,10 +24,7 @@ export class NgxCardNameTemplate {
 }
 
 @Directive({
-	selector: '[card-expiry]',
-	host: {
-		'[name]': 'name',
-	},
+	selector: '[card-expiry]'
 })
 export class NgxCardExpiryTemplate {
 	constructor(public elementRef: ElementRef, @Attribute('name') public name: string) {}
@@ -44,10 +35,7 @@ export class NgxCardExpiryTemplate {
 }
 
 @Directive({
-	selector: '[card-cvc]',
-	host: {
-		'[name]': 'name',
-	},
+	selector: '[card-cvc]'
 })
 export class NgxCardCvcTemplate {
 	constructor(public elementRef: ElementRef, @Attribute('name') public name: string) {}
